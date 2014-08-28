@@ -1,4 +1,4 @@
-// ==UserScript==
+п»ї// ==UserScript==
 // @name        Chatadelic Extension Tools
 // @namespace   https://github.com/Dacxie/Chatadelic-Extension-Tools
 // @include     http://chatadelic.net/frame.php?chat=*
@@ -196,22 +196,22 @@ $(function() {
 		ce_f_save_settings();
 		$('head').append($('<style>').text(ce_v_style));
 		$('#talkButtonsPanel').prepend(
-			$('<img>').attr('id', 'ce_btn_style').attr('src', ce_v_settings.style_disabled ? ce_v_btn_icons.style_enabled : ce_v_btn_icons.style).css('margin', '0px 4px').attr('title', 'Включить/выключить стиль чата').click(ce_f_toggle_style)
+			$('<img>').attr('id', 'ce_btn_style').attr('src', ce_v_settings.style_disabled ? ce_v_btn_icons.style_enabled : ce_v_btn_icons.style).css('margin', '0px 4px').attr('title', 'В¬РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ СЃС‚РёР»СЊ С‡Р°С‚Р°').click(ce_f_toggle_style)
 		);
 		$('#talkButtonsPanel').prepend(
-			$('<img>').attr('id', 'ce_btn_color').attr('src', ce_v_settings.color_disabled ? ce_v_btn_icons.color_enabled : ce_v_btn_icons.color).css('margin', '0px 4px').attr('title', 'Включить/выключить цвета сообщений').click(ce_f_toggle_color)
+			$('<img>').attr('id', 'ce_btn_color').attr('src', ce_v_settings.color_disabled ? ce_v_btn_icons.color_enabled : ce_v_btn_icons.color).css('margin', '0px 4px').attr('title', 'В¬РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ С†РІРµС‚Р° СЃРѕРѕР±С‰РµРЅРёР№').click(ce_f_toggle_color)
 		);
 		$('#talkButtonsPanel').prepend(
-			$('<img>').attr('id', 'ce_btn_headpic').attr('src', ce_v_settings.headpics_disabled ? ce_v_btn_icons.headpic_enabled : ce_v_btn_icons.headpic).css('margin', '0px 4px').attr('title', 'Включить/выключить головастики').click(ce_f_toggle_headpics)
+			$('<img>').attr('id', 'ce_btn_headpic').attr('src', ce_v_settings.headpics_disabled ? ce_v_btn_icons.headpic_enabled : ce_v_btn_icons.headpic).css('margin', '0px 4px').attr('title', 'В¬РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ РіРѕР»РѕРІР°СЃС‚РёРєРё').click(ce_f_toggle_headpics)
 		);
 		$('#talkButtonsPanel').prepend(
-			$('<img>').attr('id', 'ce_btn_smileys').attr('src', ce_v_settings.smileys_disabled ? ce_v_btn_icons.smileys_enabled : ce_v_btn_icons.smileys).css('margin', '0px 4px').attr('title', 'Включить/выключить смайлики').click(ce_f_toggle_smileys)
+			$('<img>').attr('id', 'ce_btn_smileys').attr('src', ce_v_settings.smileys_disabled ? ce_v_btn_icons.smileys_enabled : ce_v_btn_icons.smileys).css('margin', '0px 4px').attr('title', 'В¬РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ СЃРјР°Р№Р»РёРєРё').click(ce_f_toggle_smileys)
 		);
 		$('#talkButtonsPanel').prepend(
-			$('<img>').attr('id', 'ce_btn_bypass').attr('src', ce_v_settings.bypass_enabled ? ce_v_btn_icons.bypass_enabled : ce_v_btn_icons.bypass).css('margin', '0px 4px').attr('title', 'Включить/выключить обход спам-листа').click(ce_f_toggle_bypass)
+			$('<img>').attr('id', 'ce_btn_bypass').attr('src', ce_v_settings.bypass_enabled ? ce_v_btn_icons.bypass_enabled : ce_v_btn_icons.bypass).css('margin', '0px 4px').attr('title', 'В¬РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ РѕР±С…РѕРґ СЃРїР°Рј-Р»РёСЃС‚Р°').click(ce_f_toggle_bypass)
 		);
 		$('#talkButtonsPanel').prepend(
-			$('<img>').attr('id', 'ce_btn_nsfw').attr('src', ce_v_settings.nsfw_enabled ? ce_v_btn_icons.nsfw_enabled : ce_v_btn_icons.nsfw).css('margin', '0px 4px').attr('title', 'Включить/выключить скрытие изображений').click(ce_f_toggle_nsfw)
+			$('<img>').attr('id', 'ce_btn_nsfw').attr('src', ce_v_settings.nsfw_enabled ? ce_v_btn_icons.nsfw_enabled : ce_v_btn_icons.nsfw).css('margin', '0px 4px').attr('title', 'В¬РєР»СЋС‡РёС‚СЊ/РІС‹РєР»СЋС‡РёС‚СЊ СЃРєСЂС‹С‚РёРµ РёР·РѕР±СЂР°Р¶РµРЅРёР№').click(ce_f_toggle_nsfw)
 		);
 		ce_v_observer.observe($('.chatMessages')[0], {attributes: true, childList: true, characterData: true});
 		ce_v_style_observer.observe($('head')[0], {attributes: true, childList: true, characterData: true});
